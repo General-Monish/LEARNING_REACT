@@ -1,6 +1,6 @@
 function ToDoAppTaskAdding() {
   return (
-    <div className="container text-center">
+    <div className="container ">
       <div className="row own-Row">
         <div className="col-6">
           <input type="text" placeholder="Enter To Do Here" />

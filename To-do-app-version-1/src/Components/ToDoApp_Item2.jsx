@@ -2,12 +2,12 @@ function ToDoAppItem2() {
     let toDoName = "Buy Playstation games soon";
     let toDoDate = "25/02/2026";
   return (
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-6">{toDoName}</div>
-        <div class="col-4">{toDoDate}</div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-danger">
+    <div className="container">
+      <div className="row own-Row">
+        <div className="col-6">{toDoName}</div>
+        <div className="col-4">{toDoDate}</div>
+        <div className="col-2">
+          <button type="button" className="btn btn-outline-danger own-Button">
             Delete
           </button>
         </div>

@@ -1,15 +1,15 @@
 function ToDoAppTaskAdding() {
   return (
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-6">
+    <div className="container text-center">
+      <div className="row own-Row">
+        <div className="col-6">
           <input type="text" placeholder="Enter To Do Here" />
         </div>
-        <div class="col-4">
+        <div className="col-4">
           <input type="date" />
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-outline-success">
+        <div className="col-2">
+          <button type="button" className="btn btn-outline-success own-Button">
             Add
           </button>
         </div>

@@ -35,6 +35,7 @@ function App() {
     //     ))}
     //   </ul>
     // </>
+    //                                                         PROPS and CONDITIONAL RENDERING 
     <>
       <h1>PlayStation Games Lists</h1>
       // conditionally rendering the error message if there are no games available in the games array and also rendering the list of games using the PlayStationGames component.

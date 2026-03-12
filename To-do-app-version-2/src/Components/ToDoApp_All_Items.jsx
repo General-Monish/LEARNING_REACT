@@ -1,6 +1,5 @@
-function ToDoAppItem2() {
-    let toDoName = "Buy Playstation games soon";
-    let toDoDate = "25/02/2026";
+
+function ToDoApp_All_Items({toDoName,toDoDate}) {
   return (
     <div className="container">
       <div className="row own-Row">
@@ -15,4 +14,4 @@ function ToDoAppItem2() {
     </div>
   );
 }
-export default ToDoAppItem2;
+export default ToDoApp_All_Items;

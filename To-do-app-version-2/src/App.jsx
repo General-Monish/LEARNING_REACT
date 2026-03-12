@@ -1,18 +1,20 @@
 import ToDoAppName from "./Components/ToDoApp_Name";
 import ToDoAppTaskAdding from "./Components/ToDoApp_TaskAdding";
-import ToDoAppItem1 from "./Components/ToDoApp_Item1";
-import ToDoAppItem2 from "./Components/ToDoApp_Item2";
+import ToDoApp_Items from "./Components/ToDoApp_Items";
 import "./App.css";
 
 function App() {
+  const todoItems = [
+    { name: "Playstation-GOW", gameNumber: "1" },
+    { name: "Playstation-Last_OF_US", gameNumber: "2" },
+    { name: "Playstation-SpiderMan", gameNumber: "3" },
+  ];
+
   return (
     <center className="todo-container">
       <ToDoAppName />
       <ToDoAppTaskAdding />
-      <div className="item-container">
-        <ToDoAppItem1 />
-        <ToDoAppItem2 />
-      </div>
+      <ToDoApp_Items items={todoItems} />
     </center>
   );
 }

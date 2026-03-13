@@ -1,9 +1,4 @@
-h1 {
-  color: #333;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: 800;
-}
+
 input {
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
@@ -11,10 +6,4 @@ input {
 }
 .item-container {
   text-align: left;
-}
-.own-Row {
-  margin: 8px 5px;
-}
-.own-Button{
-    min-width: 80px;
 }

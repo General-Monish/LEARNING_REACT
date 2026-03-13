@@ -1,7 +1,7 @@
 import ToDoAppName from "./Components/ToDoApp_Name";
 import ToDoAppTaskAdding from "./Components/ToDoApp_TaskAdding";
 import ToDoApp_Items from "./Components/ToDoApp_Items";
-import "./App.css";
+
 
 function App() {
   const todoItems = [

@@ -3,7 +3,7 @@ import style from '../Components/ToDoAppTaskAdding.module.css'
 function ToDoAppTaskAdding() {
   return (
     <div className="container ">
-      <div className="row own-Row">
+      <div className={`${style["own-Row"]} row`}>
         <div className="col-6">
           <input type="text" placeholder="Enter To Do Here" />
         </div>

@@ -1,8 +1,9 @@
 import ToDoApp_All_Items from "./ToDoApp_All_Items";
+import style from '../Components/ToDoApp_All_Items.module.css'
 
 const ToDoApp_Items = ({ items }) => {
   return (
-    <div className="item-container">
+    <div className={`${style["item-container"]}`}>
       {
       items.map((item , index) => (
         <ToDoApp_All_Items

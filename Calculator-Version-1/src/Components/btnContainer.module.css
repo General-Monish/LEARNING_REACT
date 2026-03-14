@@ -1,13 +1,3 @@
-.calculator{
-    border: 1px solid black;
-    width: 70%;
-    border-radius: 9px;
-}
-.input_display{
-    width: 300px;
-    margin: 10px;
-    font-size:xx-large;
-}
 .btn_container{
     display: flex;
     justify-content: center;

@@ -1,16 +1,13 @@
-import styles from "./Components/App.module.css";
+import BtnContainer from "./Components/BtnContainer.jsx";
+import Display from "./Components/Display.jsx";
+import styles from "./App.module.css";
 
 function App() {
   return (
     <>
       <div className={styles.calculator}>
-        <input className={styles.input_display} type="text" />
-        <div className={styles.btn_container}>
-          <button className={styles.btn}>C</button>
-          <button className={styles.btn}>1</button>
-          <button className={styles.btn}>2</button>
-          <button className={styles.btn}>+</button>
-        </div>
+        <Display/>
+        <BtnContainer/>
       </div>
     </>
   );

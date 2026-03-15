@@ -1,12 +1,30 @@
 import styles from "../Components/btnContainer.module.css";
 
 const BtnContainer = () => {
+  const buttonNames = [
+    "C",
+    "1",
+    "2",
+    "+",
+    "3",
+    "4",
+    "-",
+    "5",
+    "6",
+    "*",
+    "7",
+    "8",
+    "/",
+    "=",
+    "9",
+    "0",
+    ".",
+  ];
   return (
     <div className={styles.btn_container}>
-      <button className={styles.btn}>C</button>
-      <button className={styles.btn}>1</button>
-      <button className={styles.btn}>2</button>
-      <button className={styles.btn}>+</button>
+      {buttonNames.map((buttonName) => (
+        <button className={styles.btn}>{buttonName}</button>
+      ))}
     </div>
   );
 };

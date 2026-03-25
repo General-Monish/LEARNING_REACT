@@ -21,7 +21,7 @@ const BtnContainer = () => {
     ".",
   ];
   return (
-    // added nothing
+    // added nothing again nothing
     <div className={styles.btn_container}>
       {buttonNames.map((buttonName) => (
         <button className={styles.btn}>{buttonName}</button>

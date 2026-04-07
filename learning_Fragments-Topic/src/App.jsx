@@ -1,6 +1,7 @@
 import ErrorMessage from "./Components/ErrorMessage";
 import PlayStationGames from "./Components/PlayStationGames";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "./Components/Container";
 function App() {
   // const games=[];
   const games = [
@@ -9,8 +10,7 @@ function App() {
     "The Last Of Us",
     "Horizon Zero Dawn",
     "Spider-Man",
-    "Ghost of Tsushima"
-
+    "Ghost of Tsushima",
   ];
   return (
     //                               fragment
@@ -35,14 +35,16 @@ function App() {
     //     ))}
     //   </ul>
     // </>
-    //                                                         PROPS and CONDITIONAL RENDERING 
-    <>
-      <h1 style={{fontFamily: "Arial", fontWeight: 800}}>PlayStation Games Lists</h1>
-       {/* conditionally rendering the error message if there are no games available in the games array and also rendering the list of games using the PlayStationGames component. */}
+    //                                                         PROPS and CONDITIONAL RENDERING
+    <Container>
+      <h1 style={{ fontFamily: "Arial", fontWeight: 800 }}>
+        PlayStation Games Lists
+      </h1>
+      {/* conditionally rendering the error message if there are no games available in the games array and also rendering the list of games using the PlayStationGames component. */}
       <ErrorMessage gamesItems={games} />
       {/* gamesItems prop is passed to the PlayStationGames component, which will use it to render the list of games. If the games array is empty, the ErrorMessage component will display a message indicating that no games are available. */}
       <PlayStationGames gamesItems={games} />
-    </>
+    </Container>
   );
 }
 export default App;

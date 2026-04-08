@@ -1,0 +1,9 @@
+.games-input {
+    padding: 10px;
+    margin-left: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+    box-sizing: border-box;
+}

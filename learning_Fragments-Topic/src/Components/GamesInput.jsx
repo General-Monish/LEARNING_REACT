@@ -11,5 +11,5 @@ const GamesInput = () => {
       onChange={handleOnChange}
     />
   );
-};
+}; 
 export default GamesInput;

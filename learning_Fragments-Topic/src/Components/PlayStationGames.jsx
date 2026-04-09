@@ -3,7 +3,11 @@ const PlayStationGames = ({ gamesItems }) => {
   return (
     <ul className="list-group">
       {gamesItems.map((game) => (
-        <Games key={game} games={game} />
+        <Games
+          key={game}
+          games={game}
+          handleBuyButton={() => alert(`You have bought ${game}`)}
+        />
       ))}
     </ul>
   );

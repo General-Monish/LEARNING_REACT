@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ErrorMessage from "./Components/ErrorMessage";
 import PlayStationGames from "./Components/PlayStationGames";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,10 +14,10 @@ function App() {
     "Spider-Man",
     "Ghost of Tsushima",
   ];
+  let [gameEnteredByUser, setGameEnteredByUser] = useState("Seikro 2");
   const handleOnChange = (event) => {
-    console.log(event.target.value);
+    setGameEnteredByUser(event.target.value);
   };
-  let gameEnteredByUser = "Seikro";
   return (
     //                                                         PROPS and CONDITIONAL RENDERING
     <Container>

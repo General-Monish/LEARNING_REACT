@@ -1,8 +1,5 @@
 import styles from "./GamesInput.module.css";
-const GamesInput = () => {
-    const handleOnChange = (event)=>{
-        console.log(event.target.value);
-    }
+const GamesInput = ({ handleOnChange }) => {
   return (
     <input
       type="text"

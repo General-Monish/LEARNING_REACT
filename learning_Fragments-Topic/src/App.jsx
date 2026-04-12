@@ -5,31 +5,30 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "./Components/Container";
 import GamesInput from "./Components/GamesInput";
 function App() {
-  // const games=[];
-  const games = [
-    "God Of War",
-    "Uncharted",
-    "The Last Of Us",
-    "Horizon Zero Dawn",
-    "Spider-Man",
-    "Ghost of Tsushima",
-  ];
-  let [gameEnteredByUser, setGameEnteredByUser] = useState("Seikro 2");
-  const handleOnChange = (event) => {
-    setGameEnteredByUser(event.target.value);
+  // useState hook is used to manage the state of the games list. The gamesList state variable holds the current list of games, and the setGamesList function is used to update this list when a new game is added.
+  let [gamesList, setGamesList] = useState([]);
+  const OnKeyDown = (event) => {
+    if (event.key === "Enter") {
+      let newGame = event.target.value;
+      event.target.value = "";
+      setGamesList([...gamesList, newGame]);
+      console.log(newGame);
+    }
   };
   return (
     //                                                         PROPS and CONDITIONAL RENDERING
     <Container>
       <h1 style={{ fontFamily: "Arial", fontWeight: 800 }}>
-        PlayStation Games Lists
+        PlayStation Games List
       </h1>
-      {/* conditionally rendering the error message if there are no games available in the games array and also rendering the list of games using the PlayStationGames component. */}
-      <ErrorMessage gamesItems={games} />
-      {/* gamesItems prop is passed to the PlayStationGames component, which will use it to render the list of games. If the games array is empty, the ErrorMessage component will display a message indicating that no games are available. */}
-      <GamesInput handleOnChange={handleOnChange} />
-      <p>{gameEnteredByUser}</p>
-      <PlayStationGames gamesItems={games} />
+      {/* The ErrorMessage component is rendered with the gamesList passed as a prop. This allows the ErrorMessage component to access the current list of games and display an appropriate message if the list is empty. */}
+      
+      <ErrorMessage gamesItems={gamesList} />
+      {/*
+      The GamesInput component is rendered with the OnKeyDown function passed as a prop. This allows the GamesInput component to call the OnKeyDown function when a key is pressed, enabling the functionality to add new games to the list when the Enter key is pressed.
+      */}
+      <GamesInput handleKeyDown={OnKeyDown} />
+      <PlayStationGames gamesItems={gamesList} />
     </Container>
   );
 }
